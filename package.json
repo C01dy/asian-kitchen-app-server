@@ -1,0 +1,29 @@
+{
+  "name": "asian_kitchen_delivery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "node ./src/main.js",
+    "postinstall": "link-module-alias"
+  },
+  "_moduleAliases": {
+    "@api": "./src/api",
+    "@db": "./src/db/db.js",
+    "@util": "./src/util",
+    "@http": "./src/http",
+    "@error": "./src/error"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "link-module-alias": "^1.2.0",
+    "module-alias": "^2.2.3",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0"
+  }
+}
